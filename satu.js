@@ -1,72 +1,52 @@
-//alert('test');
-/*var namaVar = '123';
-document.write(typeof(namaVar) + '<br>');
-var namaPengunjung = prompt('Silahkan masukan nama anda');
-document.write('hai ' + namaPengunjung + ',selamat datang');
+document.write('Selamat datang Vio' +'<br>');
+document.write('Silahkan belajar dengan penuh semangat' + '<br>' );
+/*var bil1 = perseInt(prompt('masukan bilangan pertama'));
+var bil2 = perseInt(prompt('masukan bilangan ke-2'));
+*/
+/*var bil1 = 30;
+var bil2 = 40; 
+var bil3 = bil1 + bil2;
+document.write('hasil penjumlahan kedua bilangan adalah : ' + bil3 + '<br>');
+document.write('hasil penjumlahan kedua bilangan adalah : ' + bil3 + '<br>'); 
+document.write(bil1 > bil2); //false 
+document.write(bil1 < bil2); //true 
+document.write('<br>')
+document.write(bil1 > bil2 && bil1 < bil2);*/
 
-var konfirmasi = confirm("mau tetap disii? ")
-var hasil = (konfirmasi==true)?  " iyaa " : "tidak"
-document.write(hasil); */
-/*var angka = parseInt(prompt("masukan angka"));
-if (angka > 10) {
-    document.write("nilai anda benar");
-}
-else if(nilai > 20) {
-    document.write("nilai anda salah");
-}
-else {
-    document.write("nilai anda tidak tahu")
-}*/
+/*var nilai = 60;
+var kelulusan = (nilai > 70) ? 'lulus' : 'tidak lulus'
+document.write(kelulusan); */ 
+ /*const bil1 = prompt("masukan bilagan pertama", );
+ const bil2 = prompt("masukan bilangan kedua", "");
+ var result =  parseInt(bil1) + parseInt(bil2);
+ document.write("Hasilnya adalah " + result); */
 
-/*var nilaiK = parseInt(prompt("masukan nilai ",'0-100'));
 
-switch(true){
-    case (nilaiK>=90): 
-    document.write('Nilai kamu A');
-    break;
-    case (nilaiK>=80): 
-    document.write("Nilai kamu B");
-    break;
-    case (nilaiK>=70): 
-    document.write("Nilai kamu C");
-    break;
-    case (nilaiK>=60): 
-    document.write("Nilai kamu D");
-    break;
-    default:
-        document.write('Input salah');
-} */
-//perbedaan antara penggunaan treu dan tidak
-var jawab = prompt("Kamu beruntung! Silahakn pilih hadiahmu dengan memasukan angka 1 sampai 5");
-        var hadiah = "";
+ /*ar nilai = parseInt(prompt('masukan nilai'));
+ var kelulusan = (nilai > 75) ? 'lulus' : 'tidak lulus'
+ document.write(kelulusan);*/
+
+ /*var totalBelanja = prompt("Total belanja?", 0);
+
+ if(totalBelanja > 100000){
+     document.write("<h2>Selamat Anda dapat hadiah</h2>");
+ } */
+
+
+        var aku = 20;
+        var kamu = 19;
+
+        var benar = (aku > kamu);
+        var salah = (aku < kamu);
+        // operator && (and)
+        var hasil = benar && salah;
+        document.write(`<br/>`);
         
-        switch(jawab){
-            case "1":
-                hadiah = "Tisu";
-                break;
-            case "2":
-                hadiah = "1 Kotak Kopi";
-                break;
-            case "3":
-                hadiah = "Sticker";
-                break;
-            case "4":
-                hadiah = "Minyak Goreng";
-                break;
-            case "5":
-                hadiah = "Uang Rp 50.000";
-                break;
-            default:
-                document.write("<p>Opps! anda salah pilih</p>");
-        }
-        if(hadiah === ""){
-            document.write("<p>Kamu gagal mendapat hadiah</p>");
-        } else {
-            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>");
-        }
-
-
-
-
-
+        // operator || (or)
+        var hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br/>`);
+        
+        // operator ! (not)
+        var hasil = !benar
+        document.write(`!${benar} = ${hasil}<br/>`);
 
