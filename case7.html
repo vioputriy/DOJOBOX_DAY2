@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <script type="text/javascript">
+  let g=prompt('pilih menu Volume / Luas Permukaan ','Luas permukaan Atau Volume')
+if (g=='Luas Permukaan'){
+    let t=parseInt(prompt('masukan tinggi balok'))
+    let p=parseInt(prompt('masukan panjang balok'))
+    let l=parseInt(prompt('masukan lebar balok'))
+    luaspermukaan=hitungLuasPermukaan(t,p,l)
+    document.write (`nilai luas permukaan adalah ${luaspermukaan}`)
+}else if (g=='Volume'){
+    let t=parseInt(prompt('masukan tinggi kubus'))
+    let p=parseInt(prompt('masukan panjang kubus'))
+    let l=parseInt(prompt('masukan lebar kubus'))
+    volume=hitungVolume(t,p,l)
+    document.write (`nilai volume adalah ${volume}`)
+}else {document.write ('nilai yang anda masukan tidak sesuai')}
+
+
+function hitungLuasPermukaan (tinggi,panjang,lebar){
+    return 2*(panjang*lebar)+2*(tinggi*lebar)+2*(tinggi*panjang)
+}
+
+function hitungVolume (tinggi,panjang,lebar){
+    return tinggi*panjang*lebar
+}
+
+/* let name = prompt("Masukan Nama Anda");
+let answer = (input) =>{
+switch (input){
+    case "Budi":
+    case "Adi":
+    case "Gunawan":
+    case "Joko":
+    case "Bambang":
+    document.write('Boleh Diperbolehkan Untuk Masuk');
+    break;
+    default:
+        document.write('Maaf Anda Tidak Boleh Masuk');
+}
+};
+
+answer(name); */
+        </script>
+    <body>  
+    </body>
+</html>

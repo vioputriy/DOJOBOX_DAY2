@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Menghitung Bangun Datar </title>
+    </head>
+    <script type="text/javascript">
+    function hitungLuasKeliling(){
+
+        var panjang, lebar, keliling, luas; 
+
+        panjang = parseInt(document.getElementById("Panjang").value);
+        lebar = parseInt(document.getElementById("Lebar").value);
+        luas = panjang * lebar; 
+        keliling = 2 * (panjang + lebar); 
+        document.getElementById("keliling").value = keliling; 
+        document.getElementById("luas").value = luas; 
+    }
+
+    function hitungLuasKelilingPersegi(){
+        var sisi, Keliling, Luas;
+
+        sisi = parseInt(document.getElementById("sisi").value);
+        Luas = sisi * sisi; 
+        Keliling = 2 * sisi; 
+        document.getElementById("Keliling").value = Keliling; 
+        document.getElementById("Luas").value = Luas; 
+    }
+    function hitungLuasKelilingSegitiga(){
+        var alas, tinggi, sisimiring, KelilingSegitiga, LuasSegitiga;
+
+        alas = parseInt(document.getElementById("alas").value);
+        tinggi = parseInt(document.getElementById("tinggi").value);
+        sisimiring = parseInt(document.getElementById("sisimiring").value);
+        LuasSegitiga = 0.5 * alas * tinggi; 
+        KelilingSegitiga = alas + tinggi + sisimiring; 
+        document.getElementById("KelilingSegitiga").value = KelilingSegitiga; 
+        document.getElementById("LuasSegitiga").value = LuasSegitiga; 
+    }
+    function hitungLuasLingkaran(){
+        var jarijari, KelilingLingkaran, LuasLingkaran; 
+
+        jarijari = parseInt(document.getElementById("Jarijari").value);
+        LuasLingkaran = 3.14 * jarijari * jarijari; 
+        KelilingLingkaran = 2 * 3.14 * jarijari; 
+        document.getElementById("KelilingLingkaran").value = KelilingLingkaran; 
+        document.getElementById("LuasLingkaran").value = LuasLingkaran; 
+    }
+    </script>
+    <body>
+        <h4>Menghitung Luas Persegi Panjang</h4>
+        <form>
+            <p>Panjang : <input type="text" id="Panjang"></p>
+            <p>Lebar : <input type="text" id="Lebar"></p>
+            <p><input type="button" value="Hitung" onclick="hitungLuasKeliling();"></p>
+            <p>Luas : <input type="text" id="luas"></p>
+            <p>Keliling : <input type="text" id="keliling"></p>
+        </form>
+        <h4>Menghitung Luas Persegi </h4>
+        <form>
+            <p>Sisi : <input type="text" id="sisi"></p>
+            <p><input type="button" value="Hitung" onclick="hitungLuasKelilingPersegi();"></p>
+            <p>Luas : <input type="text" id="Luas"></p>
+            <p>Keliling : <input type="text" id="Keliling"></p>
+        </form>
+        <h4>Menghitung Luas Segitiga </h4>
+        <form>
+            <p>Alas : <input type="text" id="alas"></p>
+            <p>Tinggi : <input type="text" id="tinggi"></p>
+            <p>Sisi Miring : <input type="text" id="sisimiring"></p>
+            <p><input type="button" value="Hitung" onclick="hitungLuasKelilingSegitiga();"></p>
+            <p>Luas : <input type="text" id="LuasSegitiga"></p>
+            <p>Keliling : <input type="text" id="KelilingSegitiga"></p>
+        </form>
+        <h4>Menghitung Luas Lingkaran  </h4>
+        <form>
+            <p>Jari - Jari : <input type="text" id="Jarijari"></p>
+            <p><input type="button" value="Hitung" onclick="hitungLuasLingkaran();"></p>
+            <p>Luas : <input type="text" id="LuasLingkaran"></p>
+            <p>Keliling : <input type="text" id="KelilingLingkaran"></p>
+        </form>
+    </body>
+</html>

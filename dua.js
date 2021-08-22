@@ -65,14 +65,6 @@ switch(true){
             document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>");
         } */
 
-var nilai = 1; 
-
-while(nilai<=10){
-    document.write('hallo admin' +'<br>');
-    nilai += 1;
-}
-
-
 
 
 
